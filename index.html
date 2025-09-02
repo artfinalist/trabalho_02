@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <nav>
+            <a href="#about">Sobre Mim</a>
+            <a href="#education">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+    <img src="img/head.png" alt="header image"
+        style="display: block; margin: 0 auto; width: 300px;">  
+    <main>
+        <section id="about" class="page-section">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Thiago Schultz. Sou um estudante de Analise de Desenvolvimento de sistemas.
+                <br>mas atuo profissionalmente com Design gráfico e Arte finalista sênior
+                    com mais de 14 anos de experiencia na área. <br>
+                    Meus Hobbies são:
+                         <ul> 
+                            <li>Andar de skate</li>
+                            <li>Desenhar</li>
+                            <li>Usar meu computador</li>     
+                        </ul>
+            </p>
+            <img src="img/hobbies.png" alt=""
+            style="width: 400px;">
+            </section>
+
+        <section id="education" class="page-section">
+            <h2>Formação</h2>
+            <ul>
+                <li><strong>Análise de Desenvolvimento de sistemas</strong> - Uninter (2025 - 2028)</li>
+                <li><strong>Idiomas:</strong> Portugues - Inglês avançado</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="page-section">
+            <h2>Portfólio</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <h3>DAE Brothers</h3>
+                    <img src="img/DAEshop.JPG" alt="daeimg" style="width: 150px;">
+                    <p>Uma loja estilo E-comerce, que estou desenvolvendo para a marca de skateboar
+                        DAE Brothers.
+                    </p>
+                    <a href="https://daeshop.netlify.app/" target="_blank">Ver Projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Layoutize</h3>
+                    <img src="img/lay.JPG" alt="daeimg" style="width: 150px;">
+                    <p>Portfólio com alguns trabalhos de design que andei desenvolvendo com a minha pseudoagência de design</p>
+                    <a href="https://layoutize.netlify.app/" target="_blank">Ver Projeto</a>
+                </div>
+                                <div class="project-card">
+                    <h3>Jogo</h3>
+                    <img src="img/game.JPG" alt="daeimg" style="width: 150px;">
+                    <p>Confira um game que eu desenvolvi no scratch, <br>seguindo uma aula do curso de programação:</p>
+                    <a href="https://scratch.mit.edu/projects/1158634972" target="_blank">Ver Projeto</a>
+                </div>
+
+
+                
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
